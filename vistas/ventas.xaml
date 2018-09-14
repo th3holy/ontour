@@ -1,0 +1,56 @@
+﻿<Window x:Class="vistas.ventas"
+        xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+        xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+        xmlns:d="http://schemas.microsoft.com/expression/blend/2008"
+        xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
+        xmlns:local="clr-namespace:vistas"
+        mc:Ignorable="d"
+        Title="ventas" Height="600" Width="800">
+    <Grid>
+
+        <Label Content="Nombre Cliente" HorizontalAlignment="Left" Margin="70,67,0,0" VerticalAlignment="Top"/>
+        <Label Content="Apellido Cliente" HorizontalAlignment="Left" Margin="70,107,0,0" VerticalAlignment="Top"/>
+        <TextBox x:Name="txt_NombreCliente" HorizontalAlignment="Left" Height="23" Margin="197,67,0,0" TextWrapping="Wrap"  VerticalAlignment="Top" Width="120"/>
+        <TextBox x:Name="txt_ApellidoCliente" HorizontalAlignment="Left" Height="23" Margin="197,110,0,0" TextWrapping="Wrap"  VerticalAlignment="Top" Width="120"/>
+        <Label Content="Email" HorizontalAlignment="Left" Margin="70,149,0,0" VerticalAlignment="Top"/>
+        <TextBox x:Name="txt_Email" HorizontalAlignment="Left" Height="23" Margin="197,152,0,0" TextWrapping="Wrap"  VerticalAlignment="Top" Width="120"/>
+        <Label Content="Numero de personas" HorizontalAlignment="Left" Margin="70,235,0,0" VerticalAlignment="Top"/>
+        <TextBox x:Name="txt_NROPersonas" HorizontalAlignment="Left" Height="23" Margin="197,238,0,0" TextWrapping="Wrap"  VerticalAlignment="Top" Width="120"/>
+        <Label Content="Precio por persona " HorizontalAlignment="Left" Margin="70,195,0,0" VerticalAlignment="Top"/>
+        <TextBox x:Name="txt_Precio" HorizontalAlignment="Left" Height="23" Margin="197,195,0,0" TextWrapping="Wrap"  VerticalAlignment="Top" Width="120"/>
+        <Label Content="Total" HorizontalAlignment="Left" Margin="113,293,0,0" VerticalAlignment="Top" Width="79" FontSize="20" FontWeight="Bold"/>
+        <TextBox x:Name="txt_total" HorizontalAlignment="Left" Height="37" Margin="197,293,0,0" TextWrapping="Wrap"  VerticalAlignment="Top" Width="120" FontSize="20" FontWeight="Bold"/>
+        <Button Content="generar contrato " HorizontalAlignment="Left" Margin="414,299,0,0" VerticalAlignment="Top" Width="150" Height="32" Click="Button_Click"/>
+        <TextBlock x:Name="Contrato" HorizontalAlignment="Left" Margin="449,67,0,0" TextWrapping="Wrap"  VerticalAlignment="Top" Height="66" Width="280" Foreground="Black" Background="#FFEEE9E9"/>
+        <Button x:Name="limpiar" Content="Limpiar" HorizontalAlignment="Left" Margin="675,152,0,0" VerticalAlignment="Top" Width="75" Click="limpiar_Click"/>
+        <DataGrid x:Name="tabla" HorizontalAlignment="Left" Height="176" Margin="70,364,0,0" VerticalAlignment="Top" Width="680" SelectionChanged="tabla_SelectionChanged" AutoGenerateColumns="False">
+            <DataGrid.Columns>
+                <DataGridTextColumn Header="ID" Binding="{Binding Path=id}"/>
+                <DataGridTextColumn Header="Nombre" Binding="{Binding Path=nombre}"/>
+                <DataGridTextColumn Header="Apellido" Binding="{Binding Path=apellido}"/>
+                <DataGridTextColumn Header="Email" Binding="{Binding Path=email}"/>
+                <DataGridTextColumn Header="Precio Persona" Binding="{Binding Path=precioPesona}"/>
+                <DataGridTextColumn Header="Cantidad" Binding="{Binding Path=NroPersona}"/>
+                <DataGridTextColumn Header="Total" Binding="{Binding Path=Total}"/>
+                <DataGridTemplateColumn>
+                    <DataGridTemplateColumn.CellTemplate>
+                        <DataTemplate>
+                            <Button Click="Button_Click_1" CommandParameter="{Binding Path=id}">Eliminar</Button>
+                        </DataTemplate>
+                    </DataGridTemplateColumn.CellTemplate>
+                </DataGridTemplateColumn>
+                <DataGridTemplateColumn>
+                    <DataGridTemplateColumn.CellTemplate>
+                        <DataTemplate>
+                            <Button Click="Button_Click_3" CommandParameter="{Binding Path=id}">editar</Button>
+                        </DataTemplate>
+                    </DataGridTemplateColumn.CellTemplate>
+                </DataGridTemplateColumn>
+            </DataGrid.Columns>
+
+        </DataGrid>
+
+
+    </Grid>
+
+</Window>

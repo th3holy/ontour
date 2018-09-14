@@ -1,0 +1,37 @@
+﻿
+Microsoft Visual Studio Solution File, Format Version 12.00
+# Visual Studio 15
+VisualStudioVersion = 15.0.27703.2026
+MinimumVisualStudioVersion = 10.0.40219.1
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "vistas", "vistas\vistas.csproj", "{BA94121B-703A-4D2E-A853-D7D16398AC4F}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Clases", "Clases\Clases.csproj", "{6CBF889D-B966-4983-9AAA-1CD02C6F2DE9}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "baseDatos", "baseDatos\baseDatos.csproj", "{FEB5C763-7733-48E4-AC71-D1F9E329C7F3}"
+EndProject
+Global
+	GlobalSection(SolutionConfigurationPlatforms) = preSolution
+		Debug|Any CPU = Debug|Any CPU
+		Release|Any CPU = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(ProjectConfigurationPlatforms) = postSolution
+		{BA94121B-703A-4D2E-A853-D7D16398AC4F}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{BA94121B-703A-4D2E-A853-D7D16398AC4F}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{BA94121B-703A-4D2E-A853-D7D16398AC4F}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{BA94121B-703A-4D2E-A853-D7D16398AC4F}.Release|Any CPU.Build.0 = Release|Any CPU
+		{6CBF889D-B966-4983-9AAA-1CD02C6F2DE9}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{6CBF889D-B966-4983-9AAA-1CD02C6F2DE9}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{6CBF889D-B966-4983-9AAA-1CD02C6F2DE9}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{6CBF889D-B966-4983-9AAA-1CD02C6F2DE9}.Release|Any CPU.Build.0 = Release|Any CPU
+		{FEB5C763-7733-48E4-AC71-D1F9E329C7F3}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{FEB5C763-7733-48E4-AC71-D1F9E329C7F3}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{FEB5C763-7733-48E4-AC71-D1F9E329C7F3}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{FEB5C763-7733-48E4-AC71-D1F9E329C7F3}.Release|Any CPU.Build.0 = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(SolutionProperties) = preSolution
+		HideSolutionNode = FALSE
+	EndGlobalSection
+	GlobalSection(ExtensibilityGlobals) = postSolution
+		SolutionGuid = {0A2D4623-AE90-44DE-B875-C177AF9BF361}
+	EndGlobalSection
+EndGlobal

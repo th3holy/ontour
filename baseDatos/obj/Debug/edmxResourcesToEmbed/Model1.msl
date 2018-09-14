@@ -1,0 +1,20 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Mapping Space="C-S" xmlns="http://schemas.microsoft.com/ado/2009/11/mapping/cs">
+  <EntityContainerMapping StorageEntityContainer="clienteventasModelStoreContainer" CdmEntityContainer="clienteventasEntities">
+    <EntitySetMapping Name="clientes">
+      <EntityTypeMapping TypeName="clienteventasModel.clientes">
+        <MappingFragment StoreEntitySet="clientes">
+          <ScalarProperty Name="id" ColumnName="id" />
+          <ScalarProperty Name="nombre" ColumnName="nombre" />
+          <ScalarProperty Name="apellido" ColumnName="apellido" />
+          <ScalarProperty Name="email" ColumnName="email" />
+          <ScalarProperty Name="precioPesona" ColumnName="precioPesona" />
+          <ScalarProperty Name="NroPersona" ColumnName="NroPersona" />
+          <ScalarProperty Name="Total" ColumnName="Total" />
+        </MappingFragment>
+      </EntityTypeMapping>
+    </EntitySetMapping>
+    <FunctionImportMapping FunctionImportName="ps_agregarcli" FunctionName="clienteventasModel.Store.ps_agregarcli" />
+    <FunctionImportMapping FunctionImportName="ps_eliminar" FunctionName="clienteventasModel.Store.ps_eliminar" />
+  </EntityContainerMapping>
+</Mapping>

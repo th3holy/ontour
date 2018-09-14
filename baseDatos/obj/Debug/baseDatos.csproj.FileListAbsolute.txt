@@ -1,0 +1,12 @@
+C:\Users\bsant\source\repos\ontour\baseDatos\bin\Debug\baseDatos.dll.config
+C:\Users\bsant\source\repos\ontour\baseDatos\bin\Debug\baseDatos.dll
+C:\Users\bsant\source\repos\ontour\baseDatos\bin\Debug\baseDatos.pdb
+C:\Users\bsant\source\repos\ontour\baseDatos\bin\Debug\EntityFramework.dll
+C:\Users\bsant\source\repos\ontour\baseDatos\bin\Debug\EntityFramework.SqlServer.dll
+C:\Users\bsant\source\repos\ontour\baseDatos\bin\Debug\EntityFramework.xml
+C:\Users\bsant\source\repos\ontour\baseDatos\bin\Debug\EntityFramework.SqlServer.xml
+C:\Users\bsant\source\repos\ontour\baseDatos\obj\Debug\baseDatos.csprojAssemblyReference.cache
+C:\Users\bsant\source\repos\ontour\baseDatos\obj\Debug\baseDatos.csproj.CoreCompileInputs.cache
+C:\Users\bsant\source\repos\ontour\baseDatos\obj\Debug\baseDatos.csproj.CopyComplete
+C:\Users\bsant\source\repos\ontour\baseDatos\obj\Debug\baseDatos.dll
+C:\Users\bsant\source\repos\ontour\baseDatos\obj\Debug\baseDatos.pdb

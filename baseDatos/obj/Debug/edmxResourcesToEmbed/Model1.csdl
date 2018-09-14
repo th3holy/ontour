@@ -1,0 +1,30 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Schema Namespace="clienteventasModel" Alias="Self" annotation:UseStrongSpatialTypes="false" xmlns:annotation="http://schemas.microsoft.com/ado/2009/02/edm/annotation" xmlns:customannotation="http://schemas.microsoft.com/ado/2013/11/edm/customannotation" xmlns="http://schemas.microsoft.com/ado/2009/11/edm">
+  <EntityType Name="clientes">
+    <Key>
+      <PropertyRef Name="id" />
+    </Key>
+    <Property Name="id" Type="Decimal" Precision="18" Scale="0" Nullable="false" />
+    <Property Name="nombre" Type="String" MaxLength="50" FixedLength="false" Unicode="false" Nullable="false" />
+    <Property Name="apellido" Type="String" MaxLength="50" FixedLength="false" Unicode="false" Nullable="false" />
+    <Property Name="email" Type="String" MaxLength="50" FixedLength="false" Unicode="false" />
+    <Property Name="precioPesona" Type="Decimal" Precision="18" Scale="0" Nullable="false" />
+    <Property Name="NroPersona" Type="Decimal" Precision="18" Scale="0" Nullable="false" />
+    <Property Name="Total" Type="Decimal" Precision="18" Scale="0" Nullable="false" />
+  </EntityType>
+  <EntityContainer Name="clienteventasEntities" annotation:LazyLoadingEnabled="true">
+    <EntitySet Name="clientes" EntityType="Self.clientes" />
+    <FunctionImport Name="ps_agregarcli">
+      <Parameter Name="id" Mode="In" Type="Decimal" />
+      <Parameter Name="nom" Mode="In" Type="String" />
+      <Parameter Name="apell" Mode="In" Type="String" />
+      <Parameter Name="email" Mode="In" Type="String" />
+      <Parameter Name="precioper" Mode="In" Type="Decimal" />
+      <Parameter Name="nroP" Mode="In" Type="Decimal" />
+      <Parameter Name="total" Mode="In" Type="Decimal" />
+    </FunctionImport>
+    <FunctionImport Name="ps_eliminar">
+      <Parameter Name="i" Mode="In" Type="Decimal" />
+    </FunctionImport>
+  </EntityContainer>
+</Schema>
